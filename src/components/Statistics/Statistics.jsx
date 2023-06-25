@@ -4,7 +4,7 @@ import { getRandomHexColor } from 'additional/randomColor.js';
 
 export function Statistics({ title, stats }) {
   return (
-    <section className={css.statistics}>
+    <div className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statisticsList}>
@@ -21,7 +21,7 @@ export function Statistics({ title, stats }) {
           );
         })}
       </ul>
-    </section>
+    </div>
   );
 }
 
